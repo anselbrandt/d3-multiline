@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: "Source Serif Pro", Iowan Old Style, Apple Garamond,
+    Palatino Linotype;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited {
+  color: #3182bd;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.Title {
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.SubTitle {
+  font-size: 0.65em;
+}

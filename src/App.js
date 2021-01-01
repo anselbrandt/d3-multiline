@@ -16,6 +16,7 @@ import {
   least,
 } from "d3";
 import useGetViewport from "./useGetViewport";
+import { GithubIcon } from "./GithubIcon";
 
 function App() {
   const { width: viewportWidth, height: viewportHeight } = useGetViewport();
@@ -195,6 +196,20 @@ function App() {
         <g className="xAxis" />
         <g className="yAxis" />
       </svg>
+      <div
+        style={{
+          width: `${width}px`,
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "flex-end",
+        }}
+      >
+        <div>
+          <a href="https://github.com/anselbrandt/d3-multiline/blob/master/src/App.js">
+            <GithubIcon fill={"black"} size={"20"} />
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
